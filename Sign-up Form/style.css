@@ -10,18 +10,47 @@ h2 {
     text-align: center;
     margin: 20px 0;
 }
+/* Styl dla kontenera głównego */
+.container {
+    position: relative;
+    width: 100%;
+}
 
 /* Styl dla kontenera obrazu */
 .image-container {
+    width: 50%; /* Obraz zajmie 50% szerokości kontenera głównego */
     float: left;
-    width: 50%;
 }
 
 /* Styl dla obrazu */
 .image-container img {
     display: block;
-    margin: 0 auto;
     max-width: 100%;
+    height: auto;
+}
+
+/* Styl dla kontenera logo */
+.logo-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 10%; /* Logo zajmuje 10% wysokości obrazu */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styl dla tła logo */
+.logo-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    width: 100%;
+}
+
+/* Styl dla logo */
+.logo-background img {
+    max-width: 100%; /* Logo zajmie szerokość kontenera tła logo */
     height: auto;
 }
 
@@ -46,7 +75,7 @@ h2 {
 
 /* Styl dla przycisku "Create Account" */
 .form-container input[type="submit"] {
-    background-color: #0074d9;
+    background-color: #596D48; /* Updated button color */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -54,5 +83,5 @@ h2 {
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #4E5F38; /* Color change on hover (optional) */
 }
